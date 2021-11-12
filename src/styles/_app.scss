@@ -1,0 +1,13 @@
+@import 'reset';
+
+@import '../styles/components/Home';
+@import '../styles/components/Header';
+@import '../styles/components/Main';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #ffffffe6;
+}

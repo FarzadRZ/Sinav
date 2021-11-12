@@ -1,0 +1,100 @@
+.main {
+    padding: 20px 20px 0;
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+
+        &-box {
+            width: 100%;
+            max-width: 430px !important;
+            border-radius: 4px !important;
+            background: #1d2226 !important;
+            border: 0.5px solid #ffffff38 !important;
+        }
+
+        &-title {
+            display: block;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            padding: 5px 0;
+            position: relative;
+            background: #38434f;
+            color: #ffffffe6;
+            width: 100%;
+            height: auto;
+            border-bottom-right-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 0;
+                z-index: 1;
+                border-style: solid;
+                border-color: #38434f transparent;
+                border-width: 13px 13px 0;
+                bottom: -13px;
+                left: 52%;
+                margin-left: -20px;
+            }
+        }
+
+        &-subtitle {
+            display: flex;
+            height: 150px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+
+            strong {
+                font-size: 55px;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+
+        &-result {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            border-top: 0.5px solid #ffffff38 !important;
+            padding: 15px 0;
+            margin: 0 40px;
+
+            &:last-child {
+                border-bottom: 0.5px solid #ffffff38 !important;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+
+        &-detail {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-size: 14px;
+            }
+        }
+
+        &-btn {
+            display: block !important;
+            min-width: 200px !important;
+            margin: 15px auto !important;
+            background: #38434f !important;
+            color: #ffffffe6 !important;
+            text-transform: capitalize !important;
+        }
+    }
+}
